@@ -41,4 +41,29 @@ public String getCourse()
 {
     return Course;
 }
+
+public void Student2()
+{
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please enter student name: ");
+    this.Name = scanner.nextLine();
+}
+
+public void Student3()
+{
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Please enter student name: ");
+    this.Name = scanner.nextLine();
+    System.out.println("Please enter student email: ");
+    this.Email = scanner.nextLine();
+    System.out.println("Please enter student course: ");
+    this.Course = scanner.nextLine();
+}
+public void display(int num)
+{
+    System.out.println("Name of student " + num + ": " + getName());
+    System.out.println("Email of student " + num + ": " + getEmail());
+    System.out.println("Course of student " + num + ": " + getCourse() + "\n\n");
+}
+
 }
